@@ -23,6 +23,7 @@ After(async function (Scenario) {
    await this.attach(screenshot,'image/png')
   await this.browser.close();
 
+
   if (Scenario.result.status == Status.FAILED) {
     //Take Screenshots all Failed Scenarios only
     const ScenarioName = Scenario.pickle.name
@@ -37,6 +38,7 @@ After(async function (Scenario) {
     await this.attach(screenshot, "image/png");
   }
   await this.browser.close();
+
 });
 
 
